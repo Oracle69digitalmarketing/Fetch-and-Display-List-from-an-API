@@ -7,8 +7,8 @@ export default function ListComponent({ items, renderItem, emptyMessage = "No it
 
   return (
     <ul>
-      {items.map((item, index) => (
-        <li key={item.id || index}>
+      {items.map((item) => (
+        <li key={item.id ?? `${item.name}-${item.email}-${Math.random()}`}>
           {renderItem(item)}
         </li>
       ))}
