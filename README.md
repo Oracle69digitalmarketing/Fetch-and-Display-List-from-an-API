@@ -1,75 +1,32 @@
-# Fetch-and-Display-List-from-an-API
-A simple React app that fetches data from a public API and displays it using a reusable, customizable list component. This project follows best practices in React functional programming, reusability, and error handling.
+# React API List App
 
-Features
+A React app that fetches users from a public API and displays them in a reusable list with search functionality.
 
-Fetches data from JSONPlaceholder API
+## Features
 
-Displays user list with names and emails
+- API fetch from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
+- Reusable, flexible `<ListComponent />`
+- Real-time search/filter feature
+- Handles loading, empty data, and errors
+- Unique keys for safe rendering with dynamic datasets
+- Semantic HTML for accessibility
 
-Reusable ListComponent that accepts any array and custom render logic
+## Screenshot
 
-Handles loading, empty states, and API errors gracefully
+![App Screenshot](./screenshot.png)
 
-Built with React hooks: useState, useEffect
+> *Make sure to add a screenshot named `screenshot.png` in the root directory.*
 
-Semantic HTML for accessibility
+## Tech Stack
 
+- React (functional components + hooks)
+- JavaScript
+- Fetch API
 
-Tech Stack
+## Installation
 
-React
-
-JavaScript (ES6+)
-
-Fetch API (built-in)
-
-CSS (optional)
-
-
-File Structure
-
-src/
-│
-├── ListComponent.jsx       // Reusable list renderer
-├── UserList.jsx            // Fetches data and uses ListComponent
-└── App.jsx                 // Renders UserList
-
-How to Run
-
-1. Clone the repo:
-
+```bash
 git clone https://github.com/your-username/react-api-list-app.git
-
-
-2. Navigate to the folder:
-
 cd react-api-list-app
-
-
-3. Install dependencies:
-
 npm install
-
-
-4. Start the development server:
-
 npm start
-
-
-
-Customization
-
-To use a different API, update the fetch call in UserList.jsx.
-
-You can pass any render function to ListComponent:
-
-<ListComponent
-  items={data}
-  renderItem={(item) => <div>{item.title}</div>}
-/>
-
-
-License
-
-MIT License
