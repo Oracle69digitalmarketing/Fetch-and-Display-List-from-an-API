@@ -1,0 +1,4 @@
+<ListComponent
+  items={yourData}
+  renderItem={(item) => <div>{item.title}</div>}
+/>
