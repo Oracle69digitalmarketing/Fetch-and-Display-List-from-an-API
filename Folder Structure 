@@ -1,0 +1,45 @@
+react-dashboard-app/
+│
+├── public/
+│   └── manifest.json
+│   └── favicon.svg
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── auth/
+│   │   │   ├── Login.jsx
+│   │   │   └── Signup.jsx
+│   │   ├── layout/
+│   │   │   ├── Header.jsx
+│   │   │   └── Sidebar.jsx
+│   │   ├── ui/
+│   │   │   ├── Button.jsx
+│   │   │   └── Loader.jsx
+│   │   └── ListComponent.jsx
+│   │
+│   ├── context/
+│   │   └── AuthContext.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Admin.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── NotFound.jsx
+│   │   └── ProtectedRoute.jsx
+│   │
+│   ├── services/
+│   │   ├── api.js
+│   │   └── firebase.js
+│   │
+│   ├── utils/
+│   │   ├── exportUtils.js
+│   │   └── helpers.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── package.json
+└── vite.config.js
