@@ -1,0 +1,11 @@
+# Create app
+npm create vite@latest react-dashboard-app --template react
+cd react-dashboard-app
+
+# Install dependencies
+npm install react-router-dom axios framer-motion
+npm install firebase  # For auth
+npm install xlsx file-saver react-csv  # For CSV/Excel export
+npm install classnames  # Optional: utility for conditional styling
+npm install tailwindcss postcss autoprefixer -D
+npx tailwindcss init -p
